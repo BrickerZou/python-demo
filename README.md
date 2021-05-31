@@ -1,2 +1,3 @@
 # ChengM
-This is a test 
+There are interesting python codes
+welcome friends and xiaobai!
