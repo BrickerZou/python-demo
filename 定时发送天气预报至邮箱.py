@@ -3,7 +3,7 @@ from email.mime.text import MIMEText
 from email.header import Header
 import requests,time
 from bs4 import BeautifulSoup
-account = '964939308@qq.com'
+account = '96493938@qq.com'
 password = 'wrqejcjhwsctbaja'
 receiver = input('请输入收件人的邮箱：')
 
@@ -25,7 +25,7 @@ def send_email(temp,weather):
     qqmail.login(account,password)
     content= '今天的天气：'+temp+weather
     message = MIMEText(content, 'plain', 'utf-8')
-    subject = '为小殷宁专属定制的天气预报'
+    subject = '为专属定制的天气预报'
     message['Subject'] = Header(subject, 'utf-8')
     try:
         qqmail.sendmail(account, receiver, message.as_string())
